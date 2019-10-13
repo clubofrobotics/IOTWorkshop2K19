@@ -28,13 +28,14 @@ $secondaryColor: rgb(255, 201, 22);
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
 
-  width:90px;
+  max-width: 1500px;
+  //width:90px;
   //margin-left: 80px;
   text-align: center;
   border-radius: 10px;
   background-color: $textColor;
   border: 3px solid $secondaryColor ;
-  padding: 2px;
+  padding: 5px;
   color: $secondaryColor;
   font-size: 125%;
   font-weight: bolder;
@@ -42,8 +43,8 @@ $secondaryColor: rgb(255, 201, 22);
   &:hover {
     color: $textColor;
     background-color: $secondaryColor;
-    width: 100px;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     //margin-left: 75px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.759);
     transition: 0.25s;
