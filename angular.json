@@ -117,8 +117,13 @@
               "devServerTarget": "CorsitRegistrations:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "CorsitRegistrations"
 }

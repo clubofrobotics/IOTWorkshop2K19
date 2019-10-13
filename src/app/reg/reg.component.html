@@ -1,0 +1,53 @@
+<div class="container">
+  <form class="bgStyle" #register="ngForm">
+    <h1 align="center">Registration Form</h1>
+
+    <div class="test">
+      <input type="text" name="usn" required ngModel #usn="ngModel"><br>
+      <label>USN<span>*</span></label>
+      <p *ngIf="usn.invalid && usn.touched">Enter your USN</p>
+    </div>
+    <br>
+
+    <div class="test">
+      <input type="text" name="name" required ngModel #name="ngModel"><br>
+      <label>Name<span>*</span></label>
+      <p *ngIf="name.invalid && name.touched">Enter your name</p>
+    </div>
+    <br>
+
+    <div class="test">
+      <input type="text" name="email" required ngModel #email="ngModel"><br>
+      <label>Email<span>*</span></label>
+      <p *ngIf="email.invalid && email.touched">Enter your email</p>
+    </div>
+    <br>
+
+    <div class="test">
+      <input type="number" name="contact"  maxlength="10" minlength="10"  required ngModel #contact="ngModel"><br>
+      <label>Contact<span>*</span></label>
+      <p *ngIf="contact.touched && contact.invalid">Invalid contact number</p>
+    </div>
+    <br>
+
+    <div class="test">
+      <input type="text" name="teamName" required ngModel #teamName="ngModel"><br>
+      <label>Team Name<span>*</span></label>
+      <p *ngIf="teamName.invalid && teamName.touched">Enter your team name</p>
+    </div>
+    <br>
+
+    <div style="display: none">
+      <input type="file" accept="image/*" (change)="preview($event)" #upload>
+    </div>
+    <div  align="center"><button class="button" style="width: 150px" (click)="upload.click()">Upload Payment Screenshot</button></div>
+    <br>
+
+    <div  align="center"><img id="img1" src="" style="width: 150px; margin: 15px"></div>
+    <br>
+
+    <div  align="center"><button class="button" (click)="create(register)">Submit</button></div>
+    <p style="color: red; font-weight: bold;" align="center">{{etext}}</p>
+    <p style="color: green; font-weight: bold;" align="center">{{stext}}</p>
+  </form>
+</div>

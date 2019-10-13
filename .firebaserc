@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fir-test-b59fb"
+  },
+  "targets": {
+    "fir-test-b59fb": {
+      "hosting": {
+        "CorsitRegistrations": [
+          "fir-test-b59fb"
+        ]
+      }
+    }
+  }
+}
